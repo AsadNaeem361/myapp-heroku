@@ -1,15 +1,18 @@
 import timeit
+from urllib.request import urlopen
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import numpy as np
 import warnings
+import requests
+
 warnings.filterwarnings("ignore")
 
 import streamlit as st
 st.title('Credit Card Fraud Detection!')
 
-df=st.cache(pd.read_csv)('https://media.githubusercontent.com/media/AsadNaeem361/myapp-heroku/main/creditcard.csv?token=ARENNXPLYXVW2MBVATOPGG3DAQZR6')
+df=st.cache(pd.read_csv)('https://media.githubusercontent.com/media/AsadNaeem361/myapp-heroku/main/creditcard.csv')
 
 #df = df.sample(frac=0.1, random_state = 48)
 
