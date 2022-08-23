@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 import streamlit as st
 st.title('Credit Card Fraud Detection!')
 
-df=st.cache(pd.read_csv)('creditcard.csv')
+df=st.cache(pd.read_csv)('https://github.com/AsadNaeem361/myapp-heroku/blob/main/creditcard.csv?raw=true')
 
 #df = df.sample(frac=0.1, random_state = 48)
 
